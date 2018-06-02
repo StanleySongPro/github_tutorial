@@ -16,7 +16,9 @@
 ### git commit (esc :wq)
 
 
-These are common Git commands used in various situations:
+---
+
+## These are common Git commands used in various situations:
 
 1. start a working area (see also: git help tutorial)
 * clone:	Clone a repository into a new directory
@@ -29,22 +31,26 @@ These are common Git commands used in various situations:
 * rm:		Remove files from the working tree and from the index
 
 3. examine the history and state (see also: git help revisions)
-	bisect     Use binary search to find the commit that introduced a bug
-	grep       Print lines matching a pattern
-	log        Show commit logs
-	show       Show various types of objects
-	status     Show the working tree status
+* bisect:	Use binary search to find the commit that introduced a bug
+* grep:		Print lines matching a pattern
+* log:		Show commit logs
+* show:		Show various types of objects
+* status:	Show the working tree status
 
 4. grow, mark and tweak your common history
-	branch     List, create, or delete branches
-	checkout   Switch branches or restore working tree files
-	commit     Record changes to the repository
-	diff       Show changes between commits, commit and working tree, etc
-	merge      Join two or more development histories together
-	rebase     Reapply commits on top of another base tip
-	tag        Create, list, delete or verify a tag object signed with GPG
+* branch:	List, create, or delete branches
+* checkout:	Switch branches or restore working tree files
+* commit:	Record changes to the repository
+* diff:		Show changes between commits, commit and working tree, etc
+* merge:	Join two or more development histories together
+* rebase:	Reapply commits on top of another base tip
+* tag:		Create, list, delete or verify a tag object signed with GPG
 
 5. collaborate (see also: git help workflows)
-	fetch      Download objects and refs from another repository
-	pull       Fetch from and integrate with another repository or a local branch
-	push       Update remote refs along with associated objects
+* fetch:	Download objects and refs from another repository
+* pull:		Fetch from and integrate with another repository or a local branch
+* push:		Update remote refs along with associated objects
+
+
+
+
