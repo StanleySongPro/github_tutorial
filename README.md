@@ -4,7 +4,7 @@
 
 ---
 
-## command lines on github
+## 1.	Command lines on github
 
 #### git clone github_url (download files from the github)
 #### git status
@@ -18,7 +18,7 @@
 
 ---
 
-## These are common Git commands used in various situations:
+## 2.	These are common Git commands used in various situations:
 
 1. start a working area (see also: git help tutorial)
 * clone:	Clone a repository into a new directory
