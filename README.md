@@ -1,4 +1,9 @@
 # github_tutorial
+
+**version 1.0.0**
+
+---
+
 ## command lines on github
 
 ### git clone github_url (download files from the github)
