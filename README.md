@@ -52,5 +52,12 @@
 * push:		Update remote refs along with associated objects
 
 
+---
+
+## 3. Markdown cheat sheet:
+
+[README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+
+
 
 
