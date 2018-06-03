@@ -14,6 +14,8 @@
 #### git push (syc everything in local machine to github.com)
 #### git pull (syc everything in github.com to local machine)
 #### git commit (esc :wq)
+#### git remote -v
+#### git remote add origin url_of_repo (if you don't have the origin)
 
 
 ---
