@@ -9,11 +9,12 @@
 * git status:                   check the status of local machine and remote repository
 * git config:
 * git help:
-* git diff:                     show teh changes made
+* git diff:                     show the changes made
 
 
 * git add <filename>:           add new file or file with changes to github
 * git add -A:                   add all to github
+* git add .:                    add all to github
  
 
 * git commit -m 'messages':     new file or changes committed but still on local machine
@@ -21,44 +22,45 @@
 * git log:                      get the history of all the commits
 
 
-* git pull origin master:                     syc everything in github.com to local machine
-* git push origin master:                     syc everything in local machine to github.com
+* git pull origin master:       syc everything in github.com to local machine
+* git push origin master:       syc everything in local machine to github.com
 
 
-* git clone github_url: download files from the github
-* git remote -v:  viewing info abou the remote repository
-* git branch -a:  viewing info abou the remote repository
+* git clone github_url:         download files from the github
+* git remote -v:                viewing info about the remote repository
+* git branch -a:                viewing info about the branch
 * git remote add origin <url_of_repo> (if you don't have the origin)
 
 
-* git init
-* rm -rf <.git>: to remove the folder from git repository
+* git init:                     initialize the local repo
+* rm -rf <.git>:                to remove the folder from git repository
 
 
 * touch .gitignore
-* git reset <filename>: remove file in the staging area
-* git reset: remove everything in the staging area
+* git reset <filename>:         remove file in the staging area
+* git reset:                    remove everything in the staging area
 
 ---
 
 ## 2.	Github by tasks:
 
 ### Copying a repo to your local computer
-* git clone <url_of_repo>
-* git remote -v: show the references connected to your repo
-* git remote add origin <url_of_repo>: add origin if you dont have
-* make some chnages: touch README.md
-* git status: check the status
-* git commit -m 'message'
-* git log: check whether commit successfully
-* git push origin master: push master branch to the origin remote
+* **git clone <url_of_repo>**
+* **git remote -v**: show the references connected to your repo
+* **git remote add origin <url_of_repo>**: add origin if you don't have
+* **make some changes**: touch README.md
+* **git status**: check the status
+* **git commit -m 'message'**
+* **git log**: check whether commit successfully
+* **git pull origin master**: pull updates from origin remote to local master branch
+* **git push origin master**: push updates from local master branch to the origin remote
 
-### Sync your github fork
-* git remote add upstream <url_of_original_repo>
-* git remote -v: check the remote status
-* git fetch upstream: fetch updates from the upstream
-* git merge upstream/master: merge upstream branch into our working branch in local machine
-* git push origin master: push changes of local machine to origin repo in github website
+### Sync your github fork (copy from others)
+* **git remote add upstream <url_of_original_repo>**
+* **git remote -v**: check the remote status
+* **git fetch upstream**: fetch updates from the upstream
+* **git merge upstream/master**: merge upstream branch into our working branch in local machine
+* **git push origin master**: push changes of local machine to origin repo in github website
 
 ### Updates rejected when pushing to github
 * create a repo in github and initialize with a README file
@@ -78,11 +80,13 @@ Unfortunately, the push action is rejected since git detects the README file in 
 
 Another two approaches to help you aviod this situation in the begining:
 * 1. Do not create the README file when you create the github repo in the beginning
-* 2. Using the cloning approach
-*
-
-
-
+* 2. Using the cloning approach:(It automatically downloads the repo and stores it in a sub directory of your working directory; it also automatically sets up the origin remote so you don't have to add the remote manually; local repo and github repo are already in sync)
+ * Create the repo with README
+ * **git clone <url_of_repo>**
+ * Make changes to local repo
+ * **git add .**
+ * **git commit -m 'message'**
+ * **git push origin master**
 
 ---
 
