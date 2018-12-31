@@ -42,7 +42,7 @@
 
 ---
 
-## 2.	Github by tasks:
+## 2.	[Github by tasks](https://www.youtube.com/watch?v=h1e8oC7g0Ps&index=11&list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD):
 
 ### Copying a repo to your local computer
 * **git clone <url_of_repo>**
