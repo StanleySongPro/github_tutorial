@@ -6,18 +6,34 @@
 
 ## 1.	Command lines on github
 
-##### git clone github_url (download files from the github)
+* git clone github_url (download files from the github)
 ##### git status
 ##### git add index.html (add new file or file with changes to github)
 ##### git add -A (add all to github)
-##### git commit -m 'add the file index.html' (new file or changes committed but still on local machine)
+##### git commit -m 'messages' (new file or changes committed but still on local machine)
 ##### git commit -a -m 'message'(commit all the changes)
+
 ##### git push (syc everything in local machine to github.com)
 ##### git pull (syc everything in github.com to local machine)
+
 ##### git commit (esc :wq)
 ##### git remote -v
 ##### git remote add origin url_of_repo (if you don't have the origin)
 
+
+* git config
+* git help
+
+* git init
+* rm -rf <.git>: to remove the folder from git repository
+
+* touch .gitignore
+* git add <filename>: add file to the staging area
+* git add -A: add everything to the staging area
+* git reset <filename>: remove file in the staging area
+* git reset: remove everything in the staging area
+  
+* git status: check the changes
 
 ---
 
