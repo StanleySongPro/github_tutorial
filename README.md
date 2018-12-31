@@ -41,7 +41,52 @@
 
 ---
 
-## 2.	These are common Git commands used in various situations:
+## 2.	Github by tasks:
+
+### Copying a repo to your local computer
+* git clone <url_of_repo>
+* git remote -v: show the references connected to your repo
+* git remote add origin <url_of_repo>: add origin if you dont have
+* make some chnages: touch README.md
+* git status: check the status
+* git commit -m 'message'
+* git log: check whether commit successfully
+* git push origin master: push master branch to the origin remote
+
+### Sync your github fork
+* git remote add upstream <url_of_original_repo>
+* git remote -v: check the remote status
+* git fetch upstream: fetch updates from the upstream
+* git merge upstream/master: merge upstream branch into our working branch in local machine
+* git push origin master: push changes of local machine to origin repo in github website
+
+### Updates rejected when pushing to github
+* create a repo in github and initialize with a README file
+* plan: make changes to local repo and get synced with the repo in github
+* **mkdir test1**: create a dir in local machine
+* **cd test1**: change directory to the sub-directory: 
+* **git init**: Initialize git
+* **git remote add origin <url_of_repo>**: Add remote that allows you easily reference your github layer
+* Then make some changes in your local machine
+* **git status**: confirm git has detected untracked file
+* **git add .**: stage the file to be commited
+* **git commit -m 'message'**: commit the changes
+* **git push origin master**: which direct git to push the committed changes on the master branch to the origin that we defined earlier
+
+Unfortunately, the push action is rejected since git detects the README file in github but not in your local machine. To fix the problem:
+* **git pull origin master**, then **git push origin master**; if got `refusing to merge unrelated histories` problem, try **git pull origin master --allow-unrelated-histories**
+
+Another two approaches to help you aviod this situation in the begining:
+* 1. Do not create the README file when you create the github repo in the beginning
+* 2. Using the cloning approach
+*
+
+
+
+
+---
+
+## 3.	These are common Git commands used in various situations:
 
 1. start a working area (see also: git help tutorial)
 * clone:	Clone a repository into a new directory
@@ -77,7 +122,7 @@
 
 ---
 
-## 3. Markdown cheat sheet:
+## 4. Markdown cheat sheet:
 
 [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
