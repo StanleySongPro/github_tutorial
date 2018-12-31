@@ -61,7 +61,7 @@
 
 [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
-![quick git command](https://github.com/StanleySongPro/github_tutorial/blob/master/image001.png "quick_git_command")
+![quick git command](https://github.com/StanleySongPro/github_tutorial/blob/master/quick_git_command.png "quick_git_command")
 
 
 
