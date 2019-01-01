@@ -81,12 +81,12 @@ Unfortunately, the push action is rejected since git detects the README file in 
 Another two approaches to help you aviod this situation in the begining:
 * 1. Do not create the README file when you create the github repo in the beginning
 * 2. Using the cloning approach:(It automatically downloads the repo and stores it in a sub directory of your working directory; it also automatically sets up the origin remote so you don't have to add the remote manually; local repo and github repo are already in sync)
- ** Create the repo with README
- * **git clone <url_of_repo>**
- * Make changes to local repo
- * **git add .**
- * **git commit -m 'message'**
- * **git push origin master**
+  * Create the repo with README
+  * **git clone <url_of_repo>**
+  * Make changes to local repo
+  * **git add .**
+  * **git commit -m 'message'**
+  * **git push origin master**
 
 ---
 
