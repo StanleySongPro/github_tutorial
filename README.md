@@ -47,9 +47,15 @@
 ### [Git quick reference for beginners](https://www.dataschool.io/git-quick-reference-for-beginners/)
 
 ### Copying a repo to your local computer
-* **git clone <url_of_repo>**
+* **git clone <url_of_repo_othres>**
 * **git remote -v**: show the references connected to your repo
-* **git remote add origin <url_of_repo>**: add origin if you don't have
+* If origin is in the original repo that you wanna copy, add the orginal repo as upstream, delete origins and add your own repo, as below:
+#### Change "origin" of your GIT repository
+  * git remote rm origin
+  * git remote add origin git@github.com:aplikacjainfo/proj1.git
+  * git config master.remote origin
+  * git config master.merge refs/heads/master
+* **git remote add origin <url_of_repo_own>**: add origin if you don't have
 * **make some changes**: touch README.md
 * **git status**: check the status
 * **git commit -m 'message'**
