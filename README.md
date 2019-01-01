@@ -53,15 +53,14 @@
 * If origin is in the original repo that you wanna copy, add the orginal repo as upstream, delete origins and add your own repo, as below:
     #### Change "origin" of your GIT repository
     * git remote rm origin
-    * git remote add origin git@github.com:aplikacjainfo/proj1.git
+    * git remote add origin <url_of_repo_own>
     * git config master.remote origin
     * git config master.merge refs/heads/master
-* **git remote add origin <url_of_repo_own>**: add origin if you don't have
+* **git pull origin master --allow-unrelated-histories**
 * **make some changes**: touch README.md
 * **git status**: check the status
 * **git commit -m 'message'**
 * **git log**: check whether commit successfully
-* **git pull origin master**: pull updates from origin remote to local master branch
 * **git push origin master**: push updates from local master branch to the origin remote
 
 ### Sync your github fork (copy from others)
