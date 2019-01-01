@@ -44,6 +44,8 @@
 
 ## 2.	[Github by tasks](https://www.youtube.com/watch?v=h1e8oC7g0Ps&index=11&list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD):
 
+### [Git quick reference for beginners](https://www.dataschool.io/git-quick-reference-for-beginners/)
+
 ### Copying a repo to your local computer
 * **git clone <url_of_repo>**
 * **git remote -v**: show the references connected to your repo
@@ -131,7 +133,6 @@ Another two approaches to help you aviod this situation in the begining:
 [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
 ![quick git command](https://github.com/StanleySongPro/github_tutorial/blob/master/quick_git_command.png "quick_git_command")
-
 
 
 
