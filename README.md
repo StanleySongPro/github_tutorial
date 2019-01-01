@@ -49,6 +49,7 @@
 ### Copying a repo to your local computer
 * **git clone <url_of_repo_othres>**
 * **git remote -v**: show the references connected to your repo
+* **git branch -r**: check the branches as well
 * If origin is in the original repo that you wanna copy, add the orginal repo as upstream, delete origins and add your own repo, as below:
     #### Change "origin" of your GIT repository
     * git remote rm origin
