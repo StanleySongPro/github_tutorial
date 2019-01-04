@@ -63,7 +63,8 @@
 * **git log**: check whether commit successfully
 * **git push origin master**: push updates from local master branch to the origin remote
 
-### Sync your github fork (copy from others)
+### Sync your github fork (fork from others)
+* **git clone < your-repo-URL >**
 * **git remote add upstream <url_of_original_repo>**
 * **git remote -v**: check the remote status
 * **git fetch upstream**: fetch updates from the upstream
