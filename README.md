@@ -144,6 +144,7 @@ Another two approaches to help you aviod this situation in the begining:
 ---
 
 ## 4. Markdown cheat sheet:
+[Learn Markdown](https://guides.github.com/features/mastering-markdown/)
 
 [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
