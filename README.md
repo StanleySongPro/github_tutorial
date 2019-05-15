@@ -142,6 +142,21 @@ Another two approaches to help you aviod this situation in the begining:
 * `git branch -d calc-divide`: 砍掉local的分枝**calc-divide*
 * `git branch -a`
 * `git push origin --delete calc-divide`: 砍掉remote repo的分枝**calc-divide*
+#### `A faster example`
+* `git branch subtract`
+* `git checkout subtract`
+* `git commit -m "editing subtract"`
+* `git push -u origin subtract`
+* `git branch -a`
+* `git checkout master`
+* `git pull origin master`
+* `git branch merged`
+* `git merge subtract`
+* `git push origin master`
+* `git branch merged`
+* `git branch -d subtract`
+* `git branch -a`
+* `git push origin --delete subtract`
 ---
 
 ## 3.	These are common Git commands used in various situations:
