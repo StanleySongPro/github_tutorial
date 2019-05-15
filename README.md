@@ -9,35 +9,44 @@
 * `git status`:                   check the status of local machine and remote repository
 * `git config`:
 * `git help`:
-* `git diff`:                     show the changes made
+* `git diff`:                     `working directory` & `staging area`
+* `git diff --staged`:            `staging area` & `most recent commit`
+* `git diff commit1 commit2`:     `commit1` & `commit2`
+* `git diff branch1 branch2`:     `branch1` & `branch2`
 
-* git add <filename>:           add new file or file with changes to github
-* git add -A:                   add all to github
-* git add .:                    add all to github
+* `git add <filename>`:           add new file or file with changes to github
+* `git add -A`:                   add all to github
+* `git add .`:                    add all to github
  
-* git commit -m 'messages':     new file or changes committed but still on local machine
-* git commit -a -m 'messages':  commit all the changes
-* git log:                      get the history of all the commits
+* `git commit -m 'messages'`:     new file or changes committed but still on local machine
+* `git commit -a -m 'messages'`:  commit all the changes
+* `git log`:                      get the history of all the commits or branch
 
+* `git pull origin master`:       syc everything in github.com to local machine
+* `git push origin master`:       syc everything in local machine to github.com
 
-* git pull origin master:       syc everything in github.com to local machine
-* git push origin master:       syc everything in local machine to github.com
+* `git clone github_url`:         download repo from the github, create connection through origin
+* `git remote -v`:                viewing info about the remote repository
+* `git branch -a`:                viewing info about the branch
+* `git remote add origin <url_of_repo>`: (if you don't have the origin)
 
+* `git init`:                     initialize the local repo
+* `rm -rf .git`:                  to remove the folder from git repository, to stop tracking this project on github
 
-* git clone github_url:         download files from the github
-* git remote -v:                viewing info about the remote repository
-* git branch -a:                viewing info about the branch
-* git remote add origin <url_of_repo> (if you don't have the origin)
+* `touch .gitignore`:             To create the list of files to ignore during version control
+* `git reset <filename>`:         remove file in the staging area
+* `git reset`:                    remove everything in the staging area
 
+* `git fetch`:                    download a copy of remote repo to local `origin/master` bookmark
+* `git fetch origin`:             update all the local copies from origin remote
+* `git log origin/master` or `git diff origin/master master`: check out the local copies
+* `git merge`:                    operates on commits 
+* `git merge master origin/master`:   merge local `origin/master` with local master branch
+* `git pull` = `git fetch` + `git merge master origin/master`
 
-* git init:                     initialize the local repo
-* rm -rf <.git>:                to remove the folder from git repository
-
-
-* touch .gitignore
-* git reset <filename>:         remove file in the staging area
-* git reset:                    remove everything in the staging area
-
+* `git checkout -b new_branch` = `git branch new_branch` + `git checkout new_branch`
+* `git show commit_name`:             show the difference of this commit with its parent commit
+* `git log --graph`:                  how the commits history graph
 ---
 
 ## 2.	[Github by tasks](https://www.youtube.com/watch?v=h1e8oC7g0Ps&index=11&list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD):
@@ -100,9 +109,9 @@ Another two approaches to help you aviod this situation in the begining:
 * **git add .** : add files from working directory to staging area
 * **git reset [file]** : if you want to unstage
 * **git commit -m "First commit"**
-* **git remote add origin remote repository URL**
+* **git remote add origin remote_epository_URL** (所以先要在github创建repo)
 * **git remote -v**
-* **git push -u origin master**: -u is associate the local branch with the remote branch
+* **git push origin master**: push files in local master to remote origin (master branch)
 
 ### Create git ignore
 * **touch .gitignore**
@@ -121,10 +130,12 @@ Another two approaches to help you aviod this situation in the begining:
 
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
+* Branches are just labels associated to commits
 * `git branch calc-divide` : assumme we are editing a function within a python file **calc-divide**
 * `git checkout calc-divide` : now we are switching to work on this branch **calc-divide**, then we can make changes to the python file
 * `git status`: take a look at the changes
 * `git commit -m "Divide Function"`: push the changes to the staging area, this will have no effect on the local master brunch or remote repo
+* `git diff --staged`: Optional, do this before commit, check the difference bettween the staging area and the most recent commit
 #### After commit, push branch to remote
 * `git push -u origin calc-divide`: `-u` tells git that we wanna associate the local **calc-divide** branch with the remote **calc-divide** branch, so in future we can just call `git pull` `git push` directly and git knows these branches are associated; 在这里，remote也自动创造了这个**calc-divide**的分枝
 * `git branch -a`: check both local and remote branches
@@ -157,7 +168,13 @@ Another two approaches to help you aviod this situation in the begining:
 * `git push origin --delete subtract`
 ---
 
-## 3.	These are common Git commands used in various situations:
+## 4.	Udacity:
+* `diff -u <file1> <file2>`
+* [Concept Map: init, add, staging area](https://classroom.udacity.com/courses/ud775/lessons/2969618657/concepts/29605487710923)
+* [Draw an updated diagram](https://classroom.udacity.com/courses/ud775/lessons/2969618657/concepts/29585087890923)
+
+---
+## 4.	These are common Git commands used in various situations:
 
 1. start a working area (see also: git help tutorial)
 * clone:	Clone a repository into a new directory
@@ -193,7 +210,7 @@ Another two approaches to help you aviod this situation in the begining:
 
 ---
 
-## 4. Markdown cheat sheet:
+## 5. Markdown cheat sheet:
 [Learn Markdown](https://guides.github.com/features/mastering-markdown/)
 
 [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
