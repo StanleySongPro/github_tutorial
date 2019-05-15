@@ -104,7 +104,7 @@ Another two approaches to help you aviod this situation in the begining:
 * **git commit -m "First commit"**
 * **git remote add origin remote repository URL**
 * **git remote -v**
-* **git push -u origin master**: -u is associate the local branch with the remote branch, they may have different branch name or the same branch name
+* **git push -u origin master**: -u is associate the local branch with the remote branch
 
 ### Create git ignore
 * **touch .gitignore**
@@ -123,9 +123,25 @@ Another two approaches to help you aviod this situation in the begining:
 
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
-* git branch calc-divide` : assumme we are editing a function within a python file **calc-divide**
-* git checkout calc-divide` : now we are switching to this branch **calc-divide**
-
+* `git branch calc-divide` : assumme we are editing a function within a python file **calc-divide**
+* `git checkout calc-divide` : now we are switching to work on this branch **calc-divide**, then we can make changes to the python file
+* `git status`: take a look at the changes
+* `git commit -m "Divide Function"`: push the changes to the staging area, this will have no effect on the local master brunch or remote repo
+#### After commit, push branch to remote
+* `git push -u origin calc-divide`: `-u` tells git that we wanna associate the local **calc-divide** branch with the remote **calc-divide** branch, so in future we can just call `git pull` `git push` directly and git knows these branches are associated; 在这里，remote也自动创造了这个**calc-divide**的分枝
+* `git branch -a`: check both local and remote branches
+#### Merge a branch
+* （local先merge， push之后remote也跟着merge）
+* `git checkout master`: switch to work on master branch
+* `git pull origin master`: 养成良好的从 remote pull 的好习惯
+* `git branch merged`: check the branch we've merged so far
+* `git merge calc-divide`: merge **calc-divide** with the local master branch
+* `git push origin master`: after this, the remote **calc-divide** branch will merge with the remote master branch as well
+#### Delete a branch
+* `git branch merged`: check the branch we've merged once again
+* `git branch -d calc-divide`: 砍掉local的分枝**calc-divide*
+* `git branch -a`
+* `git push origin --delete calc-divide`: 砍掉remote repo的分枝**calc-divide*
 ---
 
 ## 3.	These are common Git commands used in various situations:
