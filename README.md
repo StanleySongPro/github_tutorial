@@ -105,6 +105,13 @@ Another two approaches to help you aviod this situation in the begining:
 * **git remote -v**
 * **git push -u origin master**
 
+### Create git ignore
+* **touch .gitignore**
+* Open the `.gitignore` file with editor(sublime)
+* key in the list of files to ignore
+ * `.DS_Store`
+ * `.project`
+ * `*.pyc`
 ---
 
 ## 3.	These are common Git commands used in various situations:
