@@ -47,9 +47,9 @@
 ### [Git quick reference for beginners](https://www.dataschool.io/git-quick-reference-for-beginners/)
 
 ### Copying a repo to your local computer
-* **git clone <url_of_repo_othres>**
+* **git clone <url_of_repo_others>**
 * **git remote -v**: show the references connected to your repo
-* **git branch -r**: check the branches as well
+* **git branch -a**: check the branches locally and remotely
 * If origin is in the original repo that you wanna copy, add the orginal repo as upstream, delete origins and add your own repo, as below:
     #### Change "origin" of your GIT repository
     * git remote rm origin
@@ -99,19 +99,33 @@ Another two approaches to help you aviod this situation in the begining:
 
 ### [Adding an existing project to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 * **git init**
-* **git add .**
+* **git add .** : add files from working directory to staging area
+* **git reset [file]** : if you want to unstage
 * **git commit -m "First commit"**
 * **git remote add origin remote repository URL**
 * **git remote -v**
-* **git push -u origin master**
+* **git push -u origin master**: -u is associate the local branch with the remote branch, they may have different branch name or the same branch name
 
 ### Create git ignore
 * **touch .gitignore**
-* Open the `.gitignore` file with editor(sublime)
+* Open the `.gitignore` file with editor(sublime): subl .gitignore
 * key in the list of files to ignore
  * `.DS_Store`
  * `.project`
  * `*.pyc`
+ 
+### [Apply gitignore on an existing repository already tracking large number of files](https://stackoverflow.com/questions/19663093/apply-gitignore-on-an-existing-repository-already-tracking-large-number-of-files)
+* [Untrack files already added to git repository based on .gitignore](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
+* **git rm -r --cached .** : This removes everything from the index
+* **git add .**
+* **git commit -m ".gitignore is now working"**
+* **git push -u origin master**
+
+### 程序猿 Common Workflow
+#### Create a branch for desired feature
+* git branch calc-divide` : assumme we are editing a function within a python file **calc-divide**
+* git checkout calc-divide` : now we are switching to this branch **calc-divide**
+
 ---
 
 ## 3.	These are common Git commands used in various situations:
