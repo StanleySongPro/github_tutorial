@@ -6,17 +6,15 @@
 
 ## 1.	Command lines on github
 
-* git status:                   check the status of local machine and remote repository
-* git config:
-* git help:
-* git diff:                     show the changes made
-
+* `git status`:                   check the status of local machine and remote repository
+* `git config`:
+* `git help`:
+* `git diff`:                     show the changes made
 
 * git add <filename>:           add new file or file with changes to github
 * git add -A:                   add all to github
 * git add .:                    add all to github
  
-
 * git commit -m 'messages':     new file or changes committed but still on local machine
 * git commit -a -m 'messages':  commit all the changes
 * git log:                      get the history of all the commits
