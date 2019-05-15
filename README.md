@@ -139,9 +139,9 @@ Another two approaches to help you aviod this situation in the begining:
 * `git push origin master`: after this, the remote **calc-divide** branch will merge with the remote master branch as well
 #### Delete a branch
 * `git branch merged`: check the branch we've merged once again
-* `git branch -d calc-divide`: 砍掉local的分枝**calc-divide*
+* `git branch -d calc-divide`: 砍掉local的分枝**calc-divide**
 * `git branch -a`
-* `git push origin --delete calc-divide`: 砍掉remote repo的分枝**calc-divide*
+* `git push origin --delete calc-divide`: 砍掉remote repo的分枝**calc-divide**
 #### `A faster example`
 * `git branch subtract`
 * `git checkout subtract`
@@ -201,8 +201,3 @@ Another two approaches to help you aviod this situation in the begining:
 [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
 ![quick git command](https://github.com/StanleySongPro/github_tutorial/blob/master/quick_git_command.png "quick_git_command")
-
-
-
-
-
