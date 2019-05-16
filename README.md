@@ -3,6 +3,9 @@
 **version 1.0.0**
 
 ---
+## 0. Terminology
+* `Branches` are just labels associated to commits and they happen on single repository
+* `Remote` are references of remote repo to local repo
 
 ## 1.	Command lines on github
 
@@ -22,8 +25,8 @@
 * `git commit -a -m 'messages'`:  commit all the changes
 * `git log`:                      get the history of all the commits or branch
 
-* `git pull origin master`:       syc everything in github.com to local machine
-* `git push origin master`:       syc everything in local machine to github.com
+* `git pull origin master`:       pull master branch from origin to the local branch we are working on
+* `git push origin master`:       push changes in local branch we are working on to remote origin master branch
 
 * `git clone github_url`:         download repo from the github, create connection through origin
 * `git remote -v`:                viewing info about the remote repository
@@ -72,11 +75,11 @@
 
 ### Sync your github fork (fork from others)
 * **git clone < your-repo-URL >**
-* **git remote add upstream <url_of_original_repo>**
+* **git remote add upstream <url_of_original_repo>**: 把原创作者加到上游
 * **git remote -v**: check the remote status
 * **git fetch upstream**: fetch updates from the upstream
 * **git merge upstream/master**: merge upstream branch into our working branch in local machine
-* **git push origin master**: push changes of local machine to origin repo in github website
+* **git push origin master**: push changes of local machine to my origin repo in github website
 
 ### Updates rejected when pushing to github
 * create a repo in github and initialize with a README file
@@ -94,7 +97,7 @@
 Unfortunately, the push action is rejected since git detects the README file in github but not in your local machine. To fix the problem:
 * **git pull origin master**, then **git push origin master**; if got `refusing to merge unrelated histories` problem, try **git pull origin master --allow-unrelated-histories**
 
-Another two approaches to help you aviod this situation in the begining:
+Another three approaches to help you aviod this situation in the begining:
 * 1. Do not create the README file when you create the github repo in the beginning
 * 2. Using the cloning approach:(It automatically downloads the repo and stores it in a sub directory of your working directory; it also automatically sets up the origin remote so you don't have to add the remote manually; local repo and github repo are already in sync)
   * Create the repo with README
@@ -103,6 +106,11 @@ Another two approaches to help you aviod this situation in the begining:
   * **git add .**
   * **git commit -m 'message'**
   * **git push origin master**
+* 3. 或者
+  * `git fetch origin`: update all the local copies of every branch for the origin remote
+  * `git log origin/master`: inspect local copies
+  * or `git diff origin/master master`: 看local origin/master与当前branch的difference
+  * `git merge master origin/master`:  如果merge出现错误，手动解决错误，然后  add,commit etc...
 
 ### [Adding an existing project to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 * **git init**
@@ -130,7 +138,6 @@ Another two approaches to help you aviod this situation in the begining:
 
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
-* Branches are just labels associated to commits
 * `git branch calc-divide` : assumme we are editing a function within a python file **calc-divide**
 * `git checkout calc-divide` : now we are switching to work on this branch **calc-divide**, then we can make changes to the python file
 * `git status`: take a look at the changes
@@ -172,7 +179,7 @@ Another two approaches to help you aviod this situation in the begining:
 * `diff -u <file1> <file2>`
 * [Concept Map: init, add, staging area](https://classroom.udacity.com/courses/ud775/lessons/2969618657/concepts/29605487710923)
 * [Draw an updated diagram](https://classroom.udacity.com/courses/ud775/lessons/2969618657/concepts/29585087890923)
-
+* [Concept Map: GitHub, Push, Pull, Remote](https://classroom.udacity.com/courses/ud775/lessons/3105028581/concepts/31546885350923)
 ---
 ## 4.	These are common Git commands used in various situations:
 
