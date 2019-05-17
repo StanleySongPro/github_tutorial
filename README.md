@@ -79,7 +79,8 @@
 * **git remote -v**: check the remote status
 * **git fetch upstream**: fetch updates from the upstream
 * **git merge upstream/master**: merge upstream branch into our working branch in local machine
-* **git push origin master**: push changes of local machine to my origin repo in github website
+* 或者直接 **git pull upstream master**
+* **git push origin master**: push changes of local directory to my origin repo in github website
 
 ### Updates rejected when pushing to github
 * create a repo in github and initialize with a README file
