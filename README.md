@@ -125,9 +125,12 @@ Another three approaches to help you aviod this situation in the begining:
 * **touch .gitignore**
 * Open the `.gitignore` file with editor(sublime): subl .gitignore
 * key in the list of files to ignore
- * `.DS_Store`
- * `.project`
+ * `*.DS_Store`
+ * `*.project`
  * `*.pyc`
+ * `*.ipynb_checkpoints`
+ * `*.spyproject`
+ * `*Icon`
  
 ### [Apply gitignore on an existing repository already tracking large number of files](https://stackoverflow.com/questions/19663093/apply-gitignore-on-an-existing-repository-already-tracking-large-number-of-files)
 * [Untrack files already added to git repository based on .gitignore](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
