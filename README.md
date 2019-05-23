@@ -31,6 +31,7 @@
 * `git clone github_url`:         download repo from the github, create connection through origin
 * `git remote -v`:                viewing info about the remote repository
 * `git branch -a`:                viewing info about the branch
+* `git branch -av`:                viewing info about the branch
 * `git remote add origin <url_of_repo>`: (if you don't have the origin)
 
 * `git init`:                     initialize the local repo
@@ -112,6 +113,9 @@ Another three approaches to help you aviod this situation in the begining:
   * `git log origin/master`: inspect local copies
   * or `git diff origin/master master`: 看local origin/master与当前branch的difference
   * `git merge master origin/master`:  如果merge出现错误，手动解决错误，然后  add,commit etc...
+  * **[`或者强行merge`](http://www-creators.com/en/archives/1687)**
+    * `git fetch origin`: Fetch commits on "origin", and update all your remote tracking reference
+    * `git reset --hard origin/master`: Force the local master to "origin/master"
 
 ### [Adding an existing project to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 * **git init**
