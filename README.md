@@ -147,6 +147,7 @@ Another three approaches to help you aviod this situation in the begining:
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
 * `git branch calc-divide` : assumme we are editing a function within a python file **calc-divide**
+* 或者加上 `-b`: `git branch -b calc-divide`
 * `git checkout calc-divide` : now we are switching to work on this branch **calc-divide**, then we can make changes to the python file
 * `git status`: take a look at the changes
 * `git commit -m "Divide Function"`: push the changes to the staging area, this will have no effect on the local master brunch or remote repo
