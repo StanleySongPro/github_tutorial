@@ -169,7 +169,8 @@ Another three approaches to help you aviod this situation in the begining:
 * `git push origin --delete calc-divide`: 砍掉remote repo的分枝**calc-divide**
 #### `A faster example`
 * `git branch subtract`
-* `git checkout subtract`
+* `git checkout subtract`: then make changes to `subtract`
+* `git add .`
 * `git commit -m "editing subtract"`
 * `git push -u origin subtract`
 * `git branch -a`
