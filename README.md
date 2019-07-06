@@ -32,6 +32,7 @@
 * `git remote -v`:                viewing info about the remote repository
 * `git branch -a`:                viewing info about the branch
 * `git branch -av`:                viewing info about the branch
+* `git branch -u bb/master`       重新调整local git repo track 哪一个remote，这里是track bb 的master branch
 * `git remote add origin <url_of_repo>`: (if you don't have the origin)
 
 * `git init`:                     initialize the local repo
