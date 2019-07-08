@@ -58,13 +58,13 @@
 
 ### [Git quick reference for beginners](https://www.dataschool.io/git-quick-reference-for-beginners/)
 
-### Git configuration
+### 1.Git configuration
 * **git config --global user.name "Stanley Song"**
 * **git config --global user.email "luge1123@gmail.com"**
 * **git config --list**
 * **git help config** or **git config --help**: so we can use `git add --help` as well
 
-### Copying a repo to your local computer
+### 2.Copying a repo to your local computer
 * **git clone <url_of_repo_others>**
 * **git remote -v**: show the references connected to your repo
 * **git branch -a**: check the branches locally and remotely
@@ -81,7 +81,7 @@
 * **git log**: check whether commit successfully
 * **git push origin master**: push updates from local master branch to the origin remote
 
-### Sync your github fork (fork from others)
+### 3.Sync your github fork (fork from others)
 * **git clone < your-repo-URL >**
 * **git remote add upstream <url_of_original_repo>**: 把原创作者加到上游
 * **git remote -v**: check the remote status
@@ -90,7 +90,7 @@
 * 或者直接 **git pull upstream master**
 * **git push origin master**: push changes of local directory to my origin repo in github website
 
-### Updates rejected when pushing to github
+### 4.Updates rejected when pushing to github
 * create a repo in github and initialize with a README file
 * plan: make changes to local repo and get synced with the repo in github
 * **mkdir test1**: create a dir in local machine
@@ -124,7 +124,7 @@ Another three approaches to help you aviod this situation in the begining:
     * `git fetch origin`: Fetch commits on "origin", and update all your remote tracking reference
     * `git reset --hard origin/master`: Force the local master to "origin/master"
 
-### [Adding an existing project to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+### [5.Adding an existing project to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 * **git init**
 * **git add .** : add files from working directory to staging area
 * **git reset [file]** : if you want to unstage
@@ -133,7 +133,7 @@ Another three approaches to help you aviod this situation in the begining:
 * **git remote -v**
 * **git push origin master**: push files in local master to remote origin (master branch)
 
-### Create git ignore
+### 6.Create git ignore
 * **touch .gitignore**
 * Open the `.gitignore` file with editor(sublime): subl .gitignore
 * key in the list of files to ignore
@@ -144,12 +144,16 @@ Another three approaches to help you aviod this situation in the begining:
  * `*.spyproject`
  * `*Icon`
  
-### [Apply gitignore on an existing repository already tracking large number of files](https://stackoverflow.com/questions/19663093/apply-gitignore-on-an-existing-repository-already-tracking-large-number-of-files)
+### [7.Apply gitignore on an existing repository already tracking large number of files](https://stackoverflow.com/questions/19663093/apply-gitignore-on-an-existing-repository-already-tracking-large-number-of-files)
 * [Untrack files already added to git repository based on .gitignore](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
 * **git rm -r --cached .** : This removes everything from the index
 * **git add .**
 * **git commit -m ".gitignore is now working"**
 * **git push -u origin master**
+
+### 8.Fixing Common Mistakes and Undoing Bad Commits
+* **touch .gitignore**
+
 
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
