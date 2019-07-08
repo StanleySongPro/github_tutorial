@@ -11,7 +11,6 @@
 
 * `git --version`:                check git version
 * `git status`:                   check the status of local machine and remote repository
-* `git config`:
 * `git help`:
 * `git diff`:                     `working directory` & `staging area`
 * `git diff --staged`:            `staging area` & `most recent commit`
@@ -58,6 +57,12 @@
 ## 2.	[Github by tasks](https://www.youtube.com/watch?v=h1e8oC7g0Ps&index=11&list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD):
 
 ### [Git quick reference for beginners](https://www.dataschool.io/git-quick-reference-for-beginners/)
+
+### Git configuration
+* **git config --global user.name "Stanley Song"**
+* **git config --global user.email "luge1123@gmail.com"**
+* **git config --list**
+* **git help config** or **git config --help**: so we can use `git add --help` as well
 
 ### Copying a repo to your local computer
 * **git clone <url_of_repo_others>**
