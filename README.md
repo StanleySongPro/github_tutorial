@@ -9,6 +9,7 @@
 
 ## 1.	Command lines on github
 
+* `git --version`:                check git version
 * `git status`:                   check the status of local machine and remote repository
 * `git config`:
 * `git help`:
