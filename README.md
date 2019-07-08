@@ -152,7 +152,7 @@ Another three approaches to help you aviod this situation in the begining:
 * **git push -u origin master**
 
 ### 8.Fixing Common Mistakes and Undoing Bad Commits
-* **touch .gitignore**
+* **git checkout \<filename\> **
 
 
 ### 程序猿 Common Workflow
