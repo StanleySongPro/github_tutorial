@@ -152,7 +152,10 @@ Another three approaches to help you aviod this situation in the begining:
 * **git push -u origin master**
 
 ### 8.Fixing Common Mistakes and Undoing Bad Commits
-* **git checkout \<filename\> **
+* 1.如果对某一文件`calc.py`作出改变，但是我们不想要此改变，想 restore 到之前的状态
+ * **git status**
+ * **git diff**
+ * **git checkout calc.py**
 
 
 ### 程序猿 Common Workflow
