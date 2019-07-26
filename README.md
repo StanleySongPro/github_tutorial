@@ -165,6 +165,10 @@ Another three approaches to help you aviod this situation in the begining:
         * 在这里真的是忍不住吐槽
         * Remove the SSH key from the repo. (Click on repo name > Settings > Access Keys)
         * Add SSH key to Account settings SSH keys. (Click on your avatar > Bitbucket Settings > SSH Keys)
+* 2. 如果不小心 commit 了大文件， 采取以下步骤:
+    * 删除github repo，并重新建立repo
+    * add origin 来建立连接
+    * git push -u origin master
 
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
