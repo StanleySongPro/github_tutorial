@@ -109,20 +109,20 @@ Unfortunately, the push action is rejected since git detects the README file in 
 Another three approaches to help you aviod this situation in the begining:
 * 1. Do not create the README file when you create the github repo in the beginning
 * 2. Using the cloning approach:(It automatically downloads the repo and stores it in a sub directory of your working directory; it also automatically sets up the origin remote so you don't have to add the remote manually; local repo and github repo are already in sync)
-  * Create the repo with README
-  * **git clone <url_of_repo>**
-  * Make changes to local repo
-  * **git add .**
-  * **git commit -m 'message'**
-  * **git push origin master**
+    * Create the repo with README
+    * **git clone <url_of_repo>**
+    * Make changes to local repo
+    * **git add .**
+    * **git commit -m 'message'**
+    * **git push origin master**
 * 3. 或者
-  * `git fetch origin`: update all the local copies of every branch for the origin remote
-  * `git log origin/master`: inspect local copies
-  * or `git diff origin/master master`: 看local origin/master与当前branch的difference
-  * `git merge master origin/master`:  如果merge出现错误，手动解决错误，然后  add,commit etc...
-  * **[`或者强行merge`](http://www-creators.com/en/archives/1687)**
-    * `git fetch origin`: Fetch commits on "origin", and update all your remote tracking reference
-    * `git reset --hard origin/master`: Force the local master to "origin/master"
+    * `git fetch origin`: update all the local copies of every branch for the origin remote
+    * `git log origin/master`: inspect local copies
+    * or `git diff origin/master master`: 看local origin/master与当前branch的difference
+    * `git merge master origin/master`:  如果merge出现错误，手动解决错误，然后  add,commit etc...
+    * **[`或者强行merge`](http://www-creators.com/en/archives/1687)**
+        * `git fetch origin`: Fetch commits on "origin", and update all your remote tracking reference
+        * `git reset --hard origin/master`: Force the local master to "origin/master"
 
 ### [5.Adding an existing project to GitHub using the command line](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 * **git init**
@@ -137,12 +137,12 @@ Another three approaches to help you aviod this situation in the begining:
 * **touch .gitignore**
 * Open the `.gitignore` file with editor(sublime): subl .gitignore
 * key in the list of files to ignore
- * `*.DS_Store`
- * `*.project`
- * `*.pyc`
- * `*.ipynb_checkpoints`
- * `*.spyproject`
- * `*Icon`
+    * `*.DS_Store`
+    * `*.project`
+    * `*.pyc`
+    * `*.ipynb_checkpoints`
+    * `*.spyproject`
+    * `*Icon`
  
 ### [7.Apply gitignore on an existing repository already tracking large number of files](https://stackoverflow.com/questions/19663093/apply-gitignore-on-an-existing-repository-already-tracking-large-number-of-files)
 * [Untrack files already added to git repository based on .gitignore](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
@@ -153,18 +153,18 @@ Another three approaches to help you aviod this situation in the begining:
 
 ### 8.Fixing Common Mistakes and Undoing Bad Commits
 * 1.如果对某一文件`calc.py`作出改变，但是我们不想要此改变，想 restore 到之前的状态
- * **git status**
- * **git diff**
- * **git checkout calc.py**
+    * **git status**
+    * **git diff**
+    * **git checkout calc.py**
 
 ### 9.平时遇到问题总结
 * 1.[Unable to push code to my private repo](https://community.atlassian.com/t5/Bitbucket-questions/Unable-to-push-code-to-my-private-repo/qaq-p/708507)
- * 报错: `repository access denied. access via a deployment key is read-only.fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists.`
- * 测试 `ssh -T git@bitbucket.org`: `authenticated via a deploy key. You can use git or hg to connect to Bitbucket. Shell access is disabled. This deploy key has read access to the following repositories: myName/repoName: xxxxxx -- my_email_address`
- * 解决:
-  * 在这里真的是忍不住吐槽
-  * Remove the SSH key from the repo. (Click on repo name > Settings > Access Keys)
-  * Add SSH key to Account settings SSH keys. (Click on your avatar > Bitbucket Settings > SSH Keys)
+    * 报错: `repository access denied. access via a deployment key is read-only.fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists.`
+    * 测试 `ssh -T git@bitbucket.org`: `authenticated via a deploy key. You can use git or hg to connect to Bitbucket. Shell access is disabled. This deploy key has read access to the following repositories: myName/repoName: xxxxxx -- my_email_address`
+    * 解决:
+        * 在这里真的是忍不住吐槽
+        * Remove the SSH key from the repo. (Click on repo name > Settings > Access Keys)
+        * Add SSH key to Account settings SSH keys. (Click on your avatar > Bitbucket Settings > SSH Keys)
 
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
