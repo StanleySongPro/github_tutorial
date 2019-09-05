@@ -169,6 +169,12 @@ Another three approaches to help you aviod this situation in the begining:
     * 删除github repo，并重新建立repo
     * add origin 来建立连接
     * git push -u origin master
+    
+* 3. [git push Out of memory, malloc failed:](https://stackoverflow.com/questions/8855317/git-push-out-of-memory-malloc-failed/26464366)
+    * **git gc --auto --prune=today --aggressive**
+    * **git repack**
+    * **git config --global http.postbuffer 524288000**
+    * **git config --global pack.windowMemory 256m**
 
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
