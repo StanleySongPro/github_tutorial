@@ -156,8 +156,17 @@ Another three approaches to help you aviod this situation in the begining:
     * **git status**
     * **git diff**
     * **git checkout calc.py**
+    
+### 9.Working on branch
+* **git checkout -b branch_name**
+* **git add .**
+* **git commit -m "changes you've made"**
+* **git push -u branch_name**
+* **git checkout master**
+* **git pull --rebase**
+* **git push -u origin master**
 
-### 9.平时遇到问题总结
+### 10.平时遇到问题总结
 * 1.[Unable to push code to my private repo](https://community.atlassian.com/t5/Bitbucket-questions/Unable-to-push-code-to-my-private-repo/qaq-p/708507)
     * 报错: `repository access denied. access via a deployment key is read-only.fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists.`
     * 测试 `ssh -T git@bitbucket.org`: `authenticated via a deploy key. You can use git or hg to connect to Bitbucket. Shell access is disabled. This deploy key has read access to the following repositories: myName/repoName: xxxxxx -- my_email_address`
