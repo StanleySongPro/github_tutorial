@@ -174,7 +174,7 @@ Another three approaches to help you aviod this situation in the begining:
         * 在这里真的是忍不住吐槽
         * Remove the SSH key from the repo. (Click on repo name > Settings > Access Keys)
         * Add SSH key to Account settings SSH keys. (Click on your avatar > Bitbucket Settings > SSH Keys)
-* 2. 如果不小心 commit 了大文件， 采取以下步骤:
+* 2.如果不小心 commit 了大文件， 采取以下步骤:
     * 删除github repo，并重新建立repo
     * add origin 来建立连接
     * git push -u origin master
@@ -183,7 +183,7 @@ Another three approaches to help you aviod this situation in the begining:
         * If you want to "uncommit" the commits, but keep the changes around for reworking, remove the "--hard": `git reset HEAD^` which will evict the commits from the branch and from the index, but leave the working tree around.
         * If you want to save the commits on a new branch name, then run `git branch newbranchname` before doing the git reset.
     
-* 3. [git push Out of memory, malloc failed:](https://stackoverflow.com/questions/8855317/git-push-out-of-memory-malloc-failed/26464366)
+* 3.[git push Out of memory, malloc failed:](https://stackoverflow.com/questions/8855317/git-push-out-of-memory-malloc-failed/26464366)
     * **git gc --auto --prune=today --aggressive**
     * **git repack**
     * **git config --global http.postbuffer 524288000**
