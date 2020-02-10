@@ -188,6 +188,9 @@ Another three approaches to help you aviod this situation in the begining:
     * **git repack**
     * **git config --global http.postbuffer 524288000**
     * **git config --global pack.windowMemory 256m**
+    
+* 4.[How to fix Git always asking for user credentials](https://www.freecodecamp.org/news/how-to-fix-git-always-asking-for-user-credentials/)
+    * Update the URL of origin remote using SSH instead of HTTPS: **git remote set-url origin git@github.com:username/repo.git**
 
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
