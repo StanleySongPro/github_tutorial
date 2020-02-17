@@ -188,6 +188,9 @@ Another three approaches to help you aviod this situation in the begining:
     * **git repack**
     * **git config --global http.postbuffer 524288000**
     * **git config --global pack.windowMemory 256m**
+    
+* 4.[How to fix Git always asking for user credentials](https://www.freecodecamp.org/news/how-to-fix-git-always-asking-for-user-credentials/)
+    * Update the URL of origin remote using SSH instead of HTTPS: **git remote set-url origin git@github.com:username/repo.git**
 
 ### 程序猿 Common Workflow
 #### Create a branch for desired feature
@@ -278,3 +281,120 @@ Another three approaches to help you aviod this situation in the begining:
 [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
 ![quick git command](https://github.com/StanleySongPro/github_tutorial/blob/master/quick_git_command.png "quick_git_command")
+
+
+## Setup Terminal for Sublime Shorcut "subl":
+
+**Open terminal and type:**
+
+**1. Create a directory at ~/bin:**
+
+```mkdir ~/bin```
+
+**2. Copy sublime executable to your ~/bin directory:**
+
+```ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl```
+
+### BASH (Mac OS default) - use these instructions unless you know you have zsh
+
+**3a. If using bash (Mac OS default) add line to ~/.bash_profile file:**
+
+```echo 'export PATH=$PATH:$HOME/bin' >> ~/.bash_profile```
+
+**4a. Set sublime as your default editor**
+
+```echo "export EDITOR='subl -w'" >> ~/.bash_profile```
+
+or
+
+### ZSH - if you don't know what zsh is you don't have it
+
+**3b. If using zsh add line to ~/.zshrc file:**
+
+```echo 'export PATH=$PATH:$HOME/bin' >> ~/.zshrc```
+
+**4b. Set sublime as your default editor**
+
+```echo "export EDITOR='subl -w'" >> ~/.zshrc```
+
+**5. Restart terminal and type:**
+
+```subl .```
+
+Sublime should open up in the current directory.
+
+**6. Check unix commands:**
+
+```ls ```
+
+You should get a directory listing.
+
+-----
+
+### Windows
+
+Put the ```C:\Program Files\Sublime Text 2``` in your PATH.
+
+Create a ```subl.bat``` file and save it in the directory: ```C:\Program Files\Sublime Text 2```
+
+Inside the file put: ```start sublime_text.exe %*```
+
+-----
+
+If you have questions email me:
+
+barnes7td@gmail.com
+
+
+Launch Sublime Text from the command line on OSX
+---
+
+Sublime Text includes a command line tool, `subl`, to work with files on the command line. This can be used to open files and projects in Sublime Text, as well working as an EDITOR for unix tools, such as git and subversion.
+
+Requirements
+---
+- Sublime text 2 or 3 installed in your system within `Applications` folder
+
+Setup
+---
+In order to launch sublime from command line you only need to create a symlink `/usr/local/bin/subl` point to sublime app, to do so run the following in the command line.
+
+### Sublime Text 2
+
+
+	ln -sv "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
+### Sublime Text 3
+
+
+	ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
+
+### Test it out
+
+type in command line
+
+	subl test.rb
+
+it should open new file `test.rb` sublime text
+
+----
+
+NOTE: To accomplish this you must:
+
+have created a directory where you actually place binaries `/usr/local/bin` if not make it before creating a `symlink`:
+
+
+	mkdir -p /usr/local/bin
+
+have `/usr/local/bin` in your PATH environment variable, if not add by running the following command:
+
+	echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+
+then reload the shell:
+
+	source ~/.bash_profile
+
+test again.
+
+Further info read from [sublime docs](https://www.sublimetext.com/docs/2/osx_command_line.html)
