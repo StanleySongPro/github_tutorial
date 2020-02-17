@@ -344,3 +344,57 @@ Inside the file put: ```start sublime_text.exe %*```
 If you have questions email me:
 
 barnes7td@gmail.com
+
+
+Launch Sublime Text from the command line on OSX
+---
+
+Sublime Text includes a command line tool, `subl`, to work with files on the command line. This can be used to open files and projects in Sublime Text, as well working as an EDITOR for unix tools, such as git and subversion.
+
+Requirements
+---
+- Sublime text 2 or 3 installed in your system within `Applications` folder
+
+Setup
+---
+In order to launch sublime from command line you only need to create a symlink `/usr/local/bin/subl` point to sublime app, to do so run the following in the command line.
+
+### Sublime Text 2
+
+
+	ln -sv "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
+### Sublime Text 3
+
+
+	ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
+
+### Test it out
+
+type in command line
+
+	subl test.rb
+
+it should open new file `test.rb` sublime text
+
+----
+
+NOTE: To accomplish this you must:
+
+have created a directory where you actually place binaries `/usr/local/bin` if not make it before creating a `symlink`:
+
+
+	mkdir -p /usr/local/bin
+
+have `/usr/local/bin` in your PATH environment variable, if not add by running the following command:
+
+	echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+
+then reload the shell:
+
+	source ~/.bash_profile
+
+test again.
+
+Further info read from [sublime docs](https://www.sublimetext.com/docs/2/osx_command_line.html)
