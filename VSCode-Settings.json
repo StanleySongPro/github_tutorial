@@ -1,0 +1,59 @@
+{
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "window.zoomLevel": -1,
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.settings.useSplitJSON": true,
+    "python.pythonPath": "//anaconda3/bin/python",
+    "python.formatting.provider": "black",
+    // "python.formatting.autopep8Path": "autopep8",
+    // "python.formatting.provider": "autopep8",
+    "python.linting.enabled": true,
+    // grey used imports
+    // "python.linting.pylintEnabled": true,
+    // "python.linting.pylintArgs": [
+    //     "--enable=W0614"
+    // ],
+    //
+    "editor.formatOnSave": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "python": "$pythonPath -u $fullFileName",
+    },
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.saveFileBeforeRun": true,
+    "[plaintext]": {
+        "editor.quickSuggestions": false
+    },
+    "editor.quickSuggestionsDelay": 100,
+    "zenMode.centerLayout": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
+    "editor.minimap.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.inheritEnv": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "terminal.integrated.rendererType": "dom",
+    // "[html]": {
+    //     "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+    // },
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "[html]": {
+        "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+    },
+    "workbench.colorTheme": "Predawn",
+    "workbench.iconTheme": "ayu",
+    // "[html]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+}
