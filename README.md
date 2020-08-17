@@ -211,7 +211,7 @@ Another three approaches to help you aviod this situation in the begining:
 * `git merge calc-divide`: merge **calc-divide** with the local master branch
 * `git push origin master`: after this, the remote **calc-divide** branch will merge with the remote master branch as well
 #### Delete a branch
-* `git branch merged`: check the branch we've merged once again
+* `git branch --merged`: check the branch we've merged once again
 * `git branch -d calc-divide`: 砍掉local的分枝**calc-divide**
 * `git branch -a`
 * `git push origin --delete calc-divide`: 砍掉remote repo的分枝**calc-divide**
@@ -224,10 +224,10 @@ Another three approaches to help you aviod this situation in the begining:
 * `git branch -a`
 * `git checkout master`
 * `git pull origin master`
-* `git branch merged`
+* `git branch --merged`
 * `git merge subtract`
 * `git push origin master`
-* `git branch merged`
+* `git branch --merged`
 * `git branch -d subtract`
 * `git branch -a`
 * `git push origin --delete subtract`
