@@ -172,6 +172,7 @@ Check out the branch, and rebase from master.
 * **git rebase master**
 
 ### 9.2.Revert commit
+* **git log** to check which commit you want to commit
 * **git revert commit_id**
 * **git push origin master**
 
