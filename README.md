@@ -171,6 +171,10 @@ Check out the branch, and rebase from master.
 * **git checkout branch_name**
 * **git rebase master**
 
+### 9.2.Revert commit
+* **git revert commit_id**
+* **git push origin master**
+
 ### 10.平时遇到问题总结
 * 1.[Unable to push code to my private repo](https://community.atlassian.com/t5/Bitbucket-questions/Unable-to-push-code-to-my-private-repo/qaq-p/708507)
     * 报错: `repository access denied. access via a deployment key is read-only.fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists.`
